@@ -1,0 +1,78 @@
+
+@import "tailwindcss";
+
+@theme{
+
+    --breakpoint-xs:570px;
+
+
+ 
+
+    /* Typography */
+     --text-2xs: 0.6875rem; /* 11px */
+     --text-3xs: 0.625rem; /* 10px */
+    
+    /* Colors */
+    --color-background: #0D1927;  
+    --color-background-secondary: #010E1C;
+    --color-primary:  #054aa9;
+    --color-secondary:#0D1927;
+    --color-secondary-primary: #0A3774;
+    --color-accent: #1461CC;
+    --color-accent-light:#F1A604;
+    --color-accent-secondary: #A5F3FC;
+    
+
+    --color-premium: #FFFFFF;
+    --color-text-primary: #F5F5F5;
+    --color-text-secondary:#9CAABA ;
+    --color-text-tertiary: #A2ADB5;
+    --color-success: #3EB801;
+    --color-warning: #CC0000;
+    --color-border: #2D2E32;
+    --color-shadow: #1A2532;
+    --color-error: #c53030;
+    --color-onPrimary: #ABB9C4;
+    --color-text-active: #FCAC01;
+    --color-chat:#0A3774;
+    --color-background-hover:#0A1626
+
+}
+html, body {
+    height: 100vh;   
+    height: 100dvh;  
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+    height: 100dvh;
+    background-color:#010E1C;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+.hide-scrollbar{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.auth-illustration{
+    display: none;
+}
+
+:root{
+    --sidebar-width:clamp(250px, 35vw, 340px);
+}
+
+
+
+
+
+@media(min-width: 1024px)  and (min-aspect-ratio: 16/9){
+    .auth-illustration{
+        display: block;
+    }
+}
